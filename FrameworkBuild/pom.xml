@@ -78,7 +78,6 @@
 			<groupId>org.uncommons</groupId>
 			<artifactId>reportng</artifactId>
 			<version>1.1.2</version>
-			<scope>test</scope>
 			<exclusions>
 				<exclusion>
 					<groupId>org.testng</groupId>
@@ -119,6 +118,9 @@
 							<value>org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter</value>
 						</property>
 					</properties>
+					<suiteXmlFiles> 
+					<suiteXmlFile>xmlData/${testSuite}.xml</suiteXmlFile>
+ 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
